@@ -1,0 +1,21 @@
+.links{
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    border: 1px solid black;
+    font-size: 25px;
+    gap: 150px;
+}
+
+
+.titulo{
+    border: 1px solid green;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    height: 120px;
+}
