@@ -1,0 +1,70 @@
+.links{
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    border: 1px solid black;
+    font-size: 25px;
+    gap: 150px;
+}
+
+
+.titulo{
+    border: 1px solid green;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: whitesmoke
+}
+
+.logo{
+    display: flex;
+    height: 120px;
+}
+
+.reuniao{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    filter: brightness(20%);
+    border: 1px solid aquamarine;
+}
+
+.texto_imagem{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.ti-conteudo{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 45px;
+}
+
+.semi-titulo{
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+.texto-img{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.img3{
+    height: 150px;
+    border-radius: 5px;
+    font-size: 10px;
+}
