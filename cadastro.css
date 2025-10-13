@@ -1,20 +1,45 @@
-body{
-    background-color: aliceblue;
+#header{
     display: flex;
+    height: 150px;
     justify-content: center;
+    border: 1px solid black;
 }
 
-.login{
-    border: 1px solid;
-    margin: 0 auto;
-    font-size: 30px;
-    text-decoration: underline;
+body{
+    margin: 0;
+   
 }
 
-.bloco{
+#formulario{
     display: flex;
-    border: 1px solid red;
-    width: 600px;
-    height: 500px;
-    background-color:darkgray
+    flex-direction: column;
+    margin: 20px 0px 0px 10px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 300px;
+    height: 400px;
+}
+
+.conteudo{
+    margin: 10px;
+}
+
+#botoes{
+    display: flex;
+    margin: 10px;
+    height: 30px;
+    gap: 10px;
+}
+
+#bloco{
+    display: flex;
+    margin: 50px;
+    justify-content: right;
+}
+
+.foto{
+    width: 700px;
+    border-radius: 1px 220px;
+    border: 1px solid green
+    display: flex;
 }
