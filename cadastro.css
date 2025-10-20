@@ -1,45 +1,68 @@
-#header{
-    display: flex;
-    height: 150px;
-    justify-content: center;
-    border: 1px solid black;
-}
 
 body{
     margin: 0;
-   
+    padding: 0;
+    box-sizing: border-box;
 }
 
 #formulario{
     display: flex;
     flex-direction: column;
+    align-items: center;  
     margin: 20px 0px 0px 10px;
     padding: 10px;
     border: 1px solid black;
-    width: 300px;
-    height: 400px;
+    width: 700px;
+    height: 850px;
+    background-color: floralwhite;
 }
 
-.conteudo{
-    margin: 10px;
-}
-
-#botoes{
+.preencher{
     display: flex;
-    margin: 10px;
-    height: 30px;
-    gap: 10px;
+    flex-direction: column;
+    height: 100px;
+    width: 75%
 }
+
+.botao{
+    display: flex;
+    height: 30px;
+    text-decoration: none;
+    background-color: azure;
+}
+ 
 
 #bloco{
     display: flex;
-    margin: 50px;
-    justify-content: right;
+    margin: 5px;
 }
 
-.foto{
-    width: 700px;
-    border-radius: 1px 220px;
-    border: 1px solid green
+
+.texto-chamativo{
+    margin-right: 10%;
+    text-align: right;
+    font-size: 15px;
+}
+
+.container{
     display: flex;
+    justify-content: center;
+
+}
+
+.direita{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.texto-segundario{
+    font-size: 15px;
+}
+
+.termos{
+    font-size: 15px;
 }
