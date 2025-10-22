@@ -1,0 +1,36 @@
+.header-nav{
+    display: flex;
+    text-align: center;
+    background-color: whitesmoke;
+    height: 100%;
+}   
+
+.header-nav-logo{
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 30px;
+    width: 100px;
+    height: 100%;
+}
+
+.header-links{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    height: 100%;
+    width: 100%;
+}
+
+.header-link-botao{
+    display: inline-block; 
+    padding: 10px 20px; 
+    color: #000; 
+    text-decoration: underline;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    cursor: pointer;
+    border: none; 
+}
