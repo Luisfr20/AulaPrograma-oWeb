@@ -96,7 +96,6 @@
 }
 
 .equipe{
-    border: 1px solid black;
     text-align: center;
 }
 
@@ -183,7 +182,7 @@ body{
 #rodape{
     display: flex;
     background-color: darkblue;
-    color: #fff ;
+    color: white;
     justify-content: space-between;
 }
 
@@ -192,8 +191,7 @@ body{
     font-size: 25px;
 }
 
- 
-
-
-
- 
+.rodape-icone{
+    color: white;
+    font-size: 40px;
+ }
