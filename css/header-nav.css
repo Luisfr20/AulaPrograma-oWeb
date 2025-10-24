@@ -1,36 +1,100 @@
-.header-nav{
-    display: flex;
-    text-align: center;
-    background-color: whitesmoke;
-    height: 100%;
-}   
+/* ======== ESTILO PADRÃO DO HEADER ======== */
 
-.header-nav-logo{
-    display: flex;
-    align-items: center;
-    margin: 0px 0px 0px 30px;
-    width: 100px;
-    height: 100%;
+.comeco {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.header-links{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    align-items: center;
-    font-size: 25px;
-    height: 100%;
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.header-nav-logo {
+  height: 60px;
+}
+
+/* Links do menu */
+.header-links {
+  display: flex;
+  gap: 20px;
+}
+
+.header-link-botao {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.header-link-botao:hover {
+  background-color: #007bff;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Ícone do menu hamburguer (celular) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+
+/* Tablets e celulares */
+@media (max-width: 768px) {
+  /* Mostra o ícone hamburguer */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Esconde os links inicialmente */
+  .header-links {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
     width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    border-top: 2px solid #007bff;
+    padding: 10px 0;
+  }
+
+  /* Quando ativado (classe .ativo é adicionada via JS) */
+  .header-links.ativo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-link-botao {
+    text-align: center;
+    font-size: 18px;
+    padding: 12px 0;
+  }
 }
 
-.header-link-botao{
-    display: inline-block; 
-    padding: 10px 20px; 
-    color: #000; 
-    text-decoration: underline;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    cursor: pointer;
-    border: none; 
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .header-nav {
+    padding: 10px 20px;
+  }
+
+  .header-nav-logo {
+    height: 50px;
+  }
+
+  .header-link-botao {
+    font-size: 16px;
+  }
 }

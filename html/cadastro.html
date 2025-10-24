@@ -4,77 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/header-nav.css">
 </head>
 <body>
-        <div class="img-container">
-            <a href="index.html">
-                <img class="logo" src="./img/logo.png" alt="logo">
-            </a>
-            <img class="img-cadastro" src="./img/img-cadastro.png" alt="paisagem">
+     <header class="comeco">
+      <nav class="header-nav">
+        <a href="index.html">
+          <img class="header-nav-logo" src="../img/logo.png" alt="logo">
+        </a>
+
+        <!-- Botão do menu hambúrguer (só aparece no celular) -->
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
         </div>
-        <div class="direita">
-            <div>
-                <div class="texto-chamativo">
-                    <h1>É novo? Cadastre-se Aqui</h1>
-                    <p class="texto-segundario">Pra ser cliente é necessario preencher corretamente
-                    o formuário abaixo com seus dados pessoais.</p>
-                </div>
+
+        <div class="header-links" id="menu-links">
+          <a class="header-link-botao" href="projetos.html">Projetos</a>
+          <a class="header-link-botao" href="cadastro.html">Cadastro</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="direita">
+        <div>
+            <div class="texto-chamativo">
+                <h1>É novo? Cadastre-se Aqui</h1>
+                <p class="texto-segundario">Pra ser cliente é necessario preencher corretamente
+                o formulário abaixo com seus dados pessoais.</p>
             </div>
-            <section id="bloco">
-                <form id="formulario">
-                    <div class="preencher">
-                        <label  for="nome">Nome Completo:</label>
-                        <input  type="text" id="nome" name="nome" required>
-                    </div>
-                    <div class="preencher">
-                        <label for="nascimento">Data de Nascimento:</label>
-                        <input type="date" id="nascimento" name="nascimento" required>
-                    </div>
-                    <div class="preencher">
-                        <label  for="cpf">CPF:</label>   
-                        <input type="text" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" 
-                        placeholder="000.000.000-00" title="Formato: 000.000.000-00">
-                    </div>
-                    <div class="preencher">
-                        <label for="endereco">Endereço:</label>
-                        <input type="text" id="endereco" name="endereco" placeholder="Rua, número, complemento" required>
-                    </div>
-                    <div class="preencher">
-                        <label for="cep">CEP:</label>
-                        <input type="text" id="cep" name="cep" placeholder="00000-000" pattern="\d{5}-?\d{3}" required>
-                    </div>
-                    <div class="preencher">
-                        <label for="cidade">Cidade:</label>
-                        <input type="text" id="cidade" name="cidade" required>
-                    </div>
-                    <div class="preencher">
-                        <label for="estado">Estado:</label>
-                        <input type="text" id="estado" name="estado" maxlength="2" placeholder="UF" required>
-                    </div>
-                    <div class="preencher">
-                        <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" 
-                        pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
-                    </div>
-                    <div class="preencher">
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="preencher">
-                        <label for="password">Senha:</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <div>   
-                        <a class="botao" href="index.html"><button type="submit">Cadastrar</button></a>
-                    </div>
-                    <div>
-                     <p class="termos">Ao preencher o formulário acima você concorda
-                     com os nossos <u>Termos de uso</u>  e Nossa <u>Politica de Privacidade</u><p>                                                
-                    </div>
-                </form> 
-            </section>
         </div>
-    </div>    
+        <section id="bloco">
+            <form id="formulario">
+                <div class="preencher">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="preencher">
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                </div>
+                <div class="preencher">
+                    <label for="cpf">CPF:</label>   
+                    <input type="text" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" 
+                    placeholder="000.000.000-00" title="Formato: 000.000.000-00">
+                </div>
+                <div class="preencher">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Rua, número, complemento" required>
+                </div>
+                <div class="preencher">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" placeholder="00000-000" pattern="\d{5}-?\d{3}" required>
+                </div>
+                <div class="preencher">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required>
+                </div>
+                <div class="preencher">
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado" maxlength="2" placeholder="UF" required>
+                </div>
+                <div class="preencher">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
+                </div>
+                <div class="preencher">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="preencher">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div>   
+                    <a class="botao" href="index.html">
+                        <button type="submit">Cadastrar</button>
+                    </a>
+                </div>
+                <div>
+                    <p class="termos">Ao preencher o formulário acima você concorda
+                    com os nossos <u>Termos de uso</u>  e Nossa <u>Política de Privacidade</u></p>                                                
+                </div>
+            </form> 
+        </section>
+    </div>  
+
+    <!-- Script para menu hamburguer -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const headerLinks = document.getElementById('header-links');
+
+        menuToggle.addEventListener('click', () => {
+            headerLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

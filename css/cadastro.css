@@ -1,32 +1,28 @@
-
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.logo{
-    height: 100px;
-    position: absolute;
+    background-color: #f0f0f0;
 }
 
 #formulario{
     display: flex;
     flex-direction: column;
     align-items: center;  
-    margin: 20px 0px 0px 10px;
+    margin: 20px 10px 0 10px;
     padding: 10px;
     border: 1px solid black;
-    width: 700px;
-    height: 850px;
-    background-color: floralwhite;
+    width: 100%;
+    max-width: 700px; /* Mantém o limite original em telas grandes */
+    background-color: lightgray;
 }
 
 .preencher{
     display: flex;
     flex-direction: column;
-    height: 100px;
-    width: 75%
+    width: 100%;
+    max-width: 500px; /* Limite para os campos */
+    margin-bottom: 10px;
 }
 
 .botao{
@@ -34,39 +30,69 @@ body{
     height: 30px;
     text-decoration: none;
     background-color: azure;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin: 10px 0;
 }
- 
 
 #bloco{
     display: flex;
-    margin: 5px;
+    justify-content: center;
+    width: 100%;
 }
-
 
 .texto-chamativo{
-    margin-right: 10%;
     text-align: right;
     font-size: 15px;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-
+    margin-right: 10%;
 }
 
 .direita{
-    
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: start;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
 }
 
-
+/* Textos secundários */
 .texto-segundario{
     font-size: 15px;
 }
 
 .termos{
     font-size: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px){
+    .direita{
+        grid-template-columns: 1fr; /* Texto e formulário em coluna */
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .texto-chamativo{
+        text-align: center;
+        margin: 0;
+    }
+
+    #formulario{
+        width: 100%;
+        max-width: 100%; /* Ajusta formulário para telas menores */
+    }
+
+    .preencher{
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .botao{
+        width: 100%;
+        max-width: 200px;
+    }
 }

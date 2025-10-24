@@ -1,135 +1,180 @@
-
-.logo{
-  height: 150px;
-  border-radius: 50px;
-}
-
-#pagamentoicon{
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
-  text-align: center;
-}
-
-.icon-text{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center ;
-  text-align: center;
-}
-
-.projeto-titulo{
-  font-size: 40px;
-  text-align: center;
-}
-
-.meio{
-  background-color: antiquewhite;
-}
-
-
-body{
+*{
   margin: 0;
 }
 
-.bloco{
-  background-color: #f0f0f0;
+/* ===============================
+   SEÇÃO MEIO — NOSSOS PROJETOS
+   =============================== */
+.meio {
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.projeto-titulo {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Container principal usando GRID */
+#pai {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 40px;
+}
+
+/* Blocos individuais */
+.bloco {
+  background-color: #ffffff;
+  border-radius: 10px;
   padding: 20px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  width: 20%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bloco:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.bloco img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
-  margin: 10px ;
-  display: flex;
-  flex-direction: column;
- }
-
- .img-bloco{
-  border-radius: 10px;
- }
-
- #pai{
-  display: flex;
-  justify-content: space-around;
- }
-
-
- .links{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    align-items: center;
-    font-size: 25px;
-    width: 80%;
- }
-
-.doar{
-  display: flex;
-  background-color: cyan;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 15px 0;
 }
 
-.form-doar{
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  padding: 20px;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin: 10px  ;
-  background-color: #fff;
+.bloco h3 {
+  color: #007bff;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
 }
 
-.botao-doar{
-  display: flex;
-  align-items: center;
-  background-color: blue;
-  color: #fff;
-  justify-content: center;
-  margin: 0 auto;
-  height: 50px;
-  width: 60%;
-  border-radius: 10px;
+.bloco p {
+  color: #444;
+  line-height: 1.6;
 }
 
-.forma-pagamento{
-  display: flex;
-  flex-direction: column;
-  margin: 5px;
-  font-size: 20px;
+/* ===============================
+   SEÇÃO COMO DOAR
+   =============================== */
+.doar {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+  color: #333;
 }
 
-.icons{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.form-doar {
+  max-width: 700px;
+  margin: auto;
 }
 
-#rodape{
-  display: flex;
-  background-color: darkblue;
-  justify-content: space-between;
+.form-doar h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #007bff;
 }
 
-.rodape-conteudo{
+.form-doar p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.botao-doar {
+  background-color: #007bff;
   color: white;
-  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.botao-doar:hover {
+  background-color: #0056b3;
+}
+
+/* Ícones de pagamento */
+#pagamentoicon {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 25px 0;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.forma-pagamento {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+/* ===============================
+   RODAPÉ
+   =============================== */
+#rodape {
+  background-color: #007bff;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.rodape-conteudo {
+  margin-bottom: 15px;
+}
+
+.rodape-conteudo h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.rodape-icone {
+  font-size: 2rem;
   margin: 10px;
+  color: white;
+  transition: color 0.3s, transform 0.3s;
 }
 
-.rodape-icone{
-    border-radius: 5px;
-    font-size: 40px;
-    margin: 10px;
-    text-decoration: none;
-    color: wheat;
+.rodape-icone:hover {
+  color: #dce7ff;
+  transform: scale(1.2);
 }
 
-.contato{
+/* ===============================
+   RESPONSIVIDADE GERAL
+   =============================== */
+@media (max-width: 768px) {
+  .projeto-titulo {
+    font-size: 1.8rem;
+  }
+
+  .form-doar {
+    padding: 0 10px;
+  }
+
+  .botao-doar {
+    width: 100%;
+  }
+
+  #pagamentoicon {
     flex-direction: column;
+  }
+
+  .rodape-icone {
+    font-size: 1.8rem;
+  }
 }
