@@ -4,72 +4,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projetos</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="../css/projetos.css">
   <link rel="stylesheet" href="../css/header-nav.css">
+
+  <!-- Ícones -->
   <script src="https://kit.fontawesome.com/1937162958.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+  <!-- ===== HEADER ===== -->
   <header class="comeco">
     <nav class="header-nav">
-        <a href="index.html">
-          <img class="header-nav-logo" src="../img/logo.png" alt="logo"></a>
-            <div class="header-links">
-                <a class="header-link-botao"  href="projetos.html">Projetos</a>
-                <a class="header-link-botao"  href="cadastro.html">Cadastro</a>
-            </div>
+      <a href="index.html">
+        <img class="header-nav-logo" src="../img/logo.png" alt="logo">
+      </a>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <div class="header-links" id="menu-links">
+        <a class="header-link-botao" href="projetos.html">Projetos</a>
+        <a class="header-link-botao" href="cadastro.html">Cadastro</a>
+      </div>
     </nav>
   </header>
+
+  <!-- ===== PROJETOS ===== -->
   <section class="meio">
     <div class="projeto-titulo">Nossos Projetos</div>
-    <div id="pai"> 
+
+    <div class="grid-projetos">
       <div class="bloco">
         <h3><strong>Projeto Verde Vivo</strong></h3>
         <img class="img-bloco" src="../img/plantando.png" alt="plantando">
         <p>Iniciativa voltada à preservação ambiental, com ações de plantio de árvores, coleta seletiva e campanhas educativas sobre sustentabilidade nas comunidades locais.</p>
-        
       </div>
+
       <div class="bloco">
-          <h3><strong>Educação para o Futuro</strong></h3>
-          <img class="img-bloco" src="../img/jovens.png" alt="jovens">
-          <p>Projeto que promove oficinas e cursos gratuitos para jovens e adultos, incentivando o aprendizado contínuo e o desenvolvimento de habilidades para o mercado de trabalho.</p>
-         
+        <h3><strong>Educação para o Futuro</strong></h3>
+        <img class="img-bloco" src="../img/jovens.png" alt="jovens">
+        <p>Projeto que promove oficinas e cursos gratuitos para jovens e adultos, incentivando o aprendizado contínuo e o desenvolvimento de habilidades para o mercado de trabalho.</p>
       </div>
+
       <div class="bloco">
         <h3><strong>Projeto Amigos dos Animais</strong></h3>
         <img class="img-bloco" src="../img/cachorro.png" alt="cachorro">
         <p>Com foco na proteção animal, este projeto promove campanhas de adoção, vacinação e conscientização sobre cuidados com os pets. Trabalhamos para reduzir o abandono e incentivar o respeito à vida animal.</p>
-        
       </div>
-    </div> 
-    
-    <div id="pai">
-       <div class="bloco">
+
+      <div class="bloco">
         <h3><strong>Projeto Água Limpa</strong></h3>
         <img class="img-bloco" src="../img/pessoaslimpando.png" alt="limpando">
         <p>O Projeto Água Limpa busca levar acesso à água potável e conscientizar sobre o uso responsável dos recursos hídricos. Realizamos mutirões de limpeza em rios e praias, além de oficinas educativas.</p>
-       
       </div>
+
       <div class="bloco">
         <h3><strong>Projeto Conecta Comunidades</strong></h3>
-        <img src="../img/rodadeconversa.png" alt="rodadeconversa">
+        <img class="img-bloco" src="../img/rodadeconversa.png" alt="rodadeconversa">
         <p>Voltado à inclusão social, esse projeto cria uma rede de apoio entre comunidades, compartilhando recursos, informações e oportunidades de emprego. A meta é fortalecer laços locais e promover a cooperação entre bairros.</p>
-        
       </div>
+
       <div class="bloco">
         <h3><strong>Projeto Reconstrói Esperança</strong></h3>
-        <img src="../img/pintando.png" alt="pintores">
+        <img class="img-bloco" src="../img/pintando.png" alt="pintores">
         <p>Iniciativa voltada à reforma de casas e espaços comunitários em situação precária. Contamos com voluntários e parceiros que ajudam na reconstrução de moradias, trazendo dignidade e conforto para famílias necessitadas.</p>
-        
       </div>
     </div>
   </section>
+
+  <!-- ===== SEÇÃO DOAR ===== -->
   <section class="doar">
     <div class="form-doar">
       <h2>Como doar?</h2>
       <p>Sua contribuição é fundamental para nossa causa.</p>
-      <div>
+      <a href="cadastro.html">
         <button class="botao-doar">Doar Agora</button>
-      </div>
+      </a>
+
       <div id="pagamentoicon">
         <div class="icon-text">
           <i class="fa-brands fa-pix forma-pagamento"></i>
@@ -85,35 +99,47 @@
         </div>
         <div class="icon-text">
           <i class="fa-solid fa-cart-shopping forma-pagamento"></i>
-        <span>Pagamento</span>
-      </div>
+          <span>Pagamento</span>
         </div>
+      </div>
+
       <h3>Por que Doar?</h3>
       <p>Mais de 80% das nossas ações são financiadas por pessoas como você, que acreditam em nossa missão e nos ajudam a fazer a diferença.</p>
     </div>
   </section>
+
+  <!-- ===== RODAPÉ ===== -->
   <footer id="rodape">
-      <div class="rodape-conteudo">
-       <p>© 2025 ONG ConectAção — Todos os direitos reservados.</p>
-        <h3>Email</h3>
-        <p>luisfribeiro02@gmail.com</p>
+    <div class="rodape-conteudo">
+      <p>© 2025 ONG ConectAção — Todos os direitos reservados.</p>
+      <h3>Email</h3>
+      <p>luisfribeiro02@gmail.com</p>
+    </div>
+
+    <div class="rodape-conteudo contato">
+      <div>
+        <h3>Fale Conosco</h3>
+        <a href="https://wa.me/16993006005" target="_blank">
+          <i class="fa-brands fa-square-whatsapp rodape-icone"></i>
+        </a>
+        <a href="https://www.instagram.com/luisfelipe_rb" target="_blank">
+          <i class="fa-brands fa-square-instagram rodape-icone"></i>
+        </a>
+        <a href="https://github.com/Luisfr20" target="_blank">
+          <i class="fa-brands fa-square-github rodape-icone"></i>
+        </a>
       </div>
-        <div class="rodape-conteudo contato">
-            <div>
-              <h3>Fale Conosco</h3>
-              <a href="https://wa.me/16993006005" target="_blank">
-                <i class="fa-brands fa-square-whatsapp rodape-icone"></i>
-              </a>
-
-              <a href="https://www.instagram.com/luisfelipe_rb" target="_blank">
-                 <i class="fa-brands fa-square-instagram rodape-icone"></i>
-              </a>
-
-              <a href="https://github.com/Luisfr20" target="_blank">
-                <i class="fa-brands fa-square-github rodape-icone"></i>
-              </a>
-            </div>
-        </div>
+    </div>
   </footer>
+
+  <!-- JS do menu responsivo -->
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuLinks = document.getElementById("menu-links");
+
+    menuToggle.addEventListener("click", () => {
+      menuLinks.classList.toggle("ativo");
+    });
+  </script>
 </body>
 </html>

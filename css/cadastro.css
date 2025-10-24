@@ -1,13 +1,15 @@
 
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: grey;
+    background-color: #f0f0f0;
 }
 
 .logo{
     height: 100px;
+    padding: 10px;
     position: absolute;
 }
 
@@ -20,7 +22,7 @@ body{
     border: 1px solid black;
     width: 700px;
     height: 850px;
-    background-color: wheat;
+    background-color: lightgray;
 }
 
 .preencher{
@@ -35,6 +37,7 @@ body{
     height: 30px;
     text-decoration: none;
     background-color: azure;
+    cursor: pointer;
 }
  
 

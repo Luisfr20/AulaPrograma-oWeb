@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/header-nav.css">
 </head>
 <body>
-        <div class="img-container">
+    <header class="comeco">
+        <nav class="header-nav">
             <a href="index.html">
-                <img class="logo" src="../img/logo.png" alt="logo">
+                <img class="header-nav-logo" src="../img/logo.png" alt="logo">
             </a>
-        </div>
+            <div class="header-links">
+                 <a class="header-link-botao"  href="projetos.html">Projetos</a>
+                 <a class="header-link-botao"  href="cadastro.html">Cadastro</a>
+            </div>
+        </nav>
+    </header>
         <div class="direita">
             <div>
                 <div class="texto-chamativo">
@@ -65,7 +72,8 @@
                         <input type="password" id="password" name="password" required>
                     </div>
                     <div>   
-                        <a class="botao" href="index.html"><button type="submit">Cadastrar</button></a>
+                        <a class="botao" href="index.html">
+                            <button type="submit">Cadastrar</button></a>
                     </div>
                     <div>
                      <p class="termos">Ao preencher o formulário acima você concorda
